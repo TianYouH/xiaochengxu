@@ -1,0 +1,7 @@
+<view>
+  <image src="/images/1.jpg" style="width: 200px; height: 200px;" ></image>
+  <text>你好世界</text>
+  <view>
+    <text>开始小程序之旅</text>
+  </view>
+</view>
