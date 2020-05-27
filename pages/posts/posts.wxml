@@ -1,5 +1,5 @@
 <view>
-  <swiper indicator-dots="true" autoplay="true" interval="2000" vertical="true" circular="true" >
+  <swiper indicator-dots="true" autoplay="true" interval="2000" vertical="true" circular="true">
     <swiper-item>
       <image src="/images/wx.png"></image>
     </swiper-item>
@@ -10,4 +10,19 @@
       <image src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
+  <view class="post-container" >
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/1.png" ></image>
+      <text class="post-date" >Sep 18 2016</text>
+    </view>
+    <text class="post-title" >正是虾肥蟹壮时</text>
+    <image class="post-image" src="/images/post/crab.png" ></image>
+    <text class="post-content" >看似简单gas开机动画gas开机动画空间撒很多看见阿收到快件看的撒惊魂甫定卡萨定好看节哀啥大富科技爱仕达卡视角大恒科技按实际大烧烤机打个号</text>
+    <view class="post-link" >
+      <image class="post-link-image" src="/images/icon/chat.png" ></image>
+      <text class="post-link-font" >96</text>
+      <image class="post-link-image" src="/images/icon/view.png" ></image>
+      <text class="post-link-font" >112</text>
+    </view>
+  </view>
 </view>
