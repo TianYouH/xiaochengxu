@@ -61,5 +61,14 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+
+  /**
+   * 开始小程序之旅
+   */
+  onStartAppClick: function () {
+    wx.navigateTo({
+      url: '../posts/posts'
+    })
   }
 })
