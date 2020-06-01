@@ -1,3 +1,5 @@
+var postsData = require('../../data/posts-data.js');
+
 // pages/posts/posts.js
 Page({
 
@@ -5,7 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
   },
 
   /**
@@ -13,6 +14,10 @@ Page({
    */
   onLoad: function (options) {
     console.log('onLoad');
+    this.setData({
+      posts_key: postsData.postList
+    })
+    console.log('onLoad:', this.data);
   },
 
   /**
