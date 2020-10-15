@@ -1,6 +1,6 @@
 <import src='post-item/post-item-template.wxml' />
 <view>
-  <swiper indicator-dots="true" autoplay="true" interval="2000" vertical="true" circular="true">
+  <swiper indicator-dots="true" autoplay="true" interval="2000" circular="true">
     <swiper-item>
       <image src="/images/wx.png"></image>
     </swiper-item>
@@ -16,5 +16,4 @@
     <template is='post-item' data="{{ item }}" ></template>
   </block> -->
   <template wx:for="{{posts_key}}" wx:key="postId" is='post-item' data="{{ item }}" ></template>
-
 </view>

@@ -18,6 +18,8 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -27,12 +29,10 @@
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": [],
-    "useMultiFrameRuntime": false,
-    "useApiHook": true
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "2.0.4",
+  "libVersion": "2.12.2",
   "appid": "wx3509c5e9fec1d99f",
   "projectname": "xiaochengxu",
   "debugOptions": {
@@ -50,13 +50,28 @@
       "current": -1,
       "list": []
     },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
     "game": {
       "currentL": -1,
       "list": []
     },
-    "miniprogram": {
+    "gamePlugin": {
       "current": -1,
       "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "posts",
+          "pathName": "pages/posts/posts",
+          "scene": null
+        }
+      ]
     }
   }
 }

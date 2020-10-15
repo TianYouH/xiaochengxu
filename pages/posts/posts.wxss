@@ -2,7 +2,7 @@
 
 /* pages/posts/posts.wxss */
 swiper {
-  height: 500rpx;
+  height: 460rpx;
   width: 100%;
 }
 

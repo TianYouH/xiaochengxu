@@ -1,5 +1,5 @@
 <view class="container" >
-  <image src="/images/avatar/1.png" class="user-avatar" ></image>
+  <l-avatar class="l-avatar" placement="bottom" open-data="{{['userAvatarUrl', 'userNickName']}}" size="180" ></l-avatar>
   <text class="user-name" >你好世界</text>
   <view class="moto-container" bind:tap="onStartAppClick" >
     <text class="moto" >开始小程序之旅</text>

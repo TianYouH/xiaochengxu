@@ -3,8 +3,8 @@
     "pages/welcome/welcome",
     "pages/posts/posts"
   ],
-  "sitemapLocation": "sitemap92.json",
+  "sitemapLocation": "sitemap.json",
   "window": {
-    "navigationBarBackgroundColor": "#b3d4db"
+    "navigationBarBackgroundColor": "#c22a1e"
   }
 }
