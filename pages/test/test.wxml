@@ -1,0 +1,17 @@
+<view>
+  <l-index-list scroll-top="{{scrollTop}}" sidebar-data >
+    <view>
+      <l-index-anchor>A</l-index-anchor>
+      <view>鞍山</view>
+      <view>安庆</view>
+      <view>安阳</view>
+    </view>
+
+    <view>
+      <l-index-anchor>B</l-index-anchor>
+      <view>鞍山</view>
+      <view>安庆</view>
+      <view>安阳</view>
+    </view>
+  </l-index-list>
+</view>
