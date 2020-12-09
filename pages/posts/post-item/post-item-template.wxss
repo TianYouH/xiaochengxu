@@ -64,4 +64,5 @@
 
 .post-link-font {
   margin-right: 40rpx;
+  margin-left: 10rpx;
 }
