@@ -11,9 +11,9 @@
       <image src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
-<!-- 
+
   <block wx:for="{{posts_key}}" wx:key="postId" >
     <template is='post-item' data="{{ item }}" ></template>
-  </block> -->
-  <template wx:for="{{posts_key}}" wx:key="postId" is='post-item' data="{{ item }}" ></template>
+  </block>
+  <!-- <template wx:for="{{posts_key}}" wx:key="postId" is='post-item' data="{{ item }}" ></template> -->
 </view>

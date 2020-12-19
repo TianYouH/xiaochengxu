@@ -1,8 +1,7 @@
 <template name='post-item' >
-  <view class="post-container" >
+  <view data-id="{{ item.postId }}" bindtap="onGotoPostDetailTap" class="post-container" >
     <view class="post-author-date">
       <image class="post-author" src="{{ item.avatar }}"></image>
-      <!-- <image class="post-author" src="/images/avatar/3.png" ></image> -->
       <text class="post-date">{{ item.date }}</text>
     </view>
     <text class="post-title">{{ item.title }}</text>

@@ -67,5 +67,11 @@ Page({
    */
   onShareAppMessage: function () {
     console.log('onShareAppMessage');
+  },
+
+  onGotoPostDetailTap: function () {
+    wx.navigateTo({
+      url: '../post-detail/post-detail',
+    })
   }
 })

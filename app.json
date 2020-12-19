@@ -2,7 +2,8 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/posts/posts",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/post-detail/post-detail"
   ],
   "sitemapLocation": "sitemap.json",
   "window": {
