@@ -18,8 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onGotoPostDetailTap: function() {
-      console.log("你好是恶疾")
-    }
+    // onGotoPostDetailTap: function() {
+    //   console.log("你好是恶疾")
+    // }
   }
 })

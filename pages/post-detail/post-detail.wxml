@@ -1,12 +1,12 @@
 <view class="container" >
-  <image class="head-image" src="/images/vr.png"></image>
+  <image class="head-image" src="{{ postData.headImgSrc }}"></image>
   <View class="author-date" >
-    <image class="avatar" src="/images/avatar/2.png" ></image>
-    <text class="author" >作者名</text>
+    <image class="avatar" src="{{ postData.avatar }}" ></image>
+    <text class="author" >{{ postData.author }}</text>
     <text class="const-text" >发表于</text>
-    <text class="date" >16小时前</text>
+    <text class="date" >{{ postData.dateTime }}</text>
   </View>
-  <text class="title" >这个是文章标题</text>
+  <text class="title" >{{ postData.title }}</text>
   <view class="tool" >
     <view class="circle" >
       <image src="/images/icon/collection-anti.png" ></image>
@@ -14,5 +14,5 @@
     </view>
     <view class="horizon" ></view>
   </view>
-  <text class="detail" >我这里是文章内容</text>
+  <text class="detail" selectable="{{ false }}" >{{ postData.detail }}</text>
 </view>

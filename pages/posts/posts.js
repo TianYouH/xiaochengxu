@@ -69,9 +69,12 @@ Page({
     console.log('onShareAppMessage');
   },
 
-  onGotoPostDetailTap: function () {
+  onGotoPostDetailTap: function (event) {
+    console.log('event：', event);
+    console.log('id：', event.currentTarget.dataset.id);
+    const pid = event.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '../post-detail/post-detail',
+      url: `../post-detail/post-detail?pid=${pid}`,
     })
   }
 })

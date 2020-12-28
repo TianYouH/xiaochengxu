@@ -1,4 +1,5 @@
 // pages/post-detail.js
+import { postList } from "../../data/posts-data"
 Page({
 
   /**
@@ -12,7 +13,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const { pid } = options;
+    const postData = postList.find(post => (post.postId === Number(pid)));
+    // console.log("文章数据：", postData);
+    this.setData({
+      postData
+    })
   },
 
   /**
