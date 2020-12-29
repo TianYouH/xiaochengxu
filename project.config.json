@@ -61,9 +61,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/posts/posts",
-          "pathName": "pages/posts/posts",
-          "query": "",
+          "name": "pages/post-detail/post-detail",
+          "pathName": "pages/post-detail/post-detail",
+          "query": "pid=3",
           "scene": null
         },
         {

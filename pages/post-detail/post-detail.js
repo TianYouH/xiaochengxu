@@ -1,12 +1,16 @@
 // pages/post-detail.js
 import { postList } from "../../data/posts-data"
+const app = getApp();
+console.log('app:', app)
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    postData: {},
+    collected: false,
+    _pid: null
   },
 
   /**
@@ -14,10 +18,31 @@ Page({
    */
   onLoad: function (options) {
     const { pid } = options;
+    const collected = wx.getStorageSync('posts_collected')[pid];
     const postData = postList.find(post => (post.postId === Number(pid)));
     // console.log("文章数据：", postData);
     this.setData({
-      postData
+      postData,
+      _pid: pid,
+      collected
+    })
+  },
+
+  onCollect(event) {
+    if (this.data.collected) {
+      wx.setStorageSync('posts_collected', {
+        [this.data._pid]: false
+      })
+      this.setData({
+        collected: false
+      })
+      return;
+    }
+    wx.setStorageSync('posts_collected', {
+      [this.data._pid]: true
+    })
+    this.setData({
+      collected: true
     })
   },
 
