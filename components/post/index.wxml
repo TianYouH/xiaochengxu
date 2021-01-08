@@ -1,0 +1,17 @@
+<view data-id="{{ item.postId }}" bindtap="onGotoPostDetailTap" class="post-container" >
+    <view class="post-author-date">
+      <image class="post-author" src="{{ item.avatar }}"></image>
+      <text class="post-date">{{ item.date }}</text>
+    </view>
+    <text class="post-title">{{ item.title }}</text>
+    <image class="post-image" src="{{ item.imgSrc }}"></image>
+    <text class="post-content">{{ item.content }}</text>
+    <view class="post-link">
+      <!-- <image class="post-link-image" src="/images/icon/chat.png"></image> -->
+      <l-icon name="favor" size="32" ></l-icon>
+      <text class="post-link-font">{{ item.collection }}</text>
+      <!-- <image class="post-link-image" src="/images/icon/view.png"></image> -->
+      <l-icon name="eye" size="32" ></l-icon>
+      <text class="post-link-font">{{ item.reading }}</text>
+    </view>
+  </view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <image class="poster" src="{{ item.images.large }}"></image>
+  <text class="title">{{ item.original_title }}</text>
+  <view class="rate-container" >
+    <l-rate size="22" score="{{ item.rating.average/2 }}" disabled active-color="#FFDD55" inActive-color="#FFF5CE"></l-rate>
+    <text class="score" >{{ item.rating.average/2 }}</text>
+  </view>
+</view>

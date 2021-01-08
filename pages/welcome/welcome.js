@@ -67,8 +67,12 @@ Page({
    * 开始小程序之旅
    */
   onStartAppClick: function () {
-    wx.redirectTo({
-      url: '../posts/posts'
+    // wx.redirectTo({
+    //   url: '../posts/posts'
+    // })
+    wx.switchTab({
+      url: '/pages/posts/posts',
+      // url: '/pages/movies/movies',
     })
   }
 })
