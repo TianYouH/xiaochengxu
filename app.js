@@ -3,6 +3,7 @@ App({
   test: 1,
   gIsPlayingMusic: false,
   gIsPlayingPostId: -1,
+  gBaseUrl: 'http://t.talelin.com/v2/movie/',
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */

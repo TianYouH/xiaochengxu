@@ -1,3 +1,3 @@
 <movie-list movies="{{inTheaters}}" title="正在热映" m-class="movie-list" ></movie-list>
-<!-- <movie-list title="即将上映" m-class="movie-list" ></movie-list>
-<movie-list title="豆瓣 Top250" m-class="movie-list" ></movie-list> -->
+<movie-list movies="{{comingSoom}}" title="即将上映" m-class="movie-list" ></movie-list>
+<movie-list movies="{{top250}}" title="豆瓣 Top250" m-class="movie-list" ></movie-list>
