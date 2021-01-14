@@ -1,7 +1,24 @@
 /* pages/movies/movies.wxss */
 page {
   background-color: #f2f2f2;
+  /* background-color: red; */
 }
 .movie-list {
   margin-bottom: 30rpx;
+}
+
+.ex-search-bar {
+  height: 90rpx !important;
+}
+
+.search-container {
+  padding: 40rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-container::after {
+  content: '';
+  width: 200rpx;
 }

@@ -21,7 +21,7 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
     "babelSetting": {
       "ignore": [],
@@ -36,7 +36,8 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "useApiHostProcess": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.1",
@@ -82,6 +83,12 @@
           "name": "pages/movies/movies",
           "pathName": "pages/movies/movies",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/more-movie/more-movie",
+          "pathName": "pages/more-movie/more-movie",
+          "query": "type=top250",
           "scene": null
         }
       ]

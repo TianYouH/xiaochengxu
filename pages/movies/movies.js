@@ -8,8 +8,10 @@ Page({
    */
   data: {
     inTheaters: [],
-    comingSoom: [],
-    top250: []
+    comingSoon: [],
+    top250: [],
+    searchResult: false,
+    searchData: []
   },
 
   /**
@@ -34,7 +36,7 @@ Page({
       success: (res) => {
         console.log("电影列表结果：", res.data);
         this.setData({
-          comingSoom: res.data.subjects
+          comingSoon: res.data.subjects
         })
       }
     })
@@ -49,6 +51,32 @@ Page({
     })
   },
 
+  onConfirm(event) {
+    this.setData({
+      searchResult: true
+    })
+    // console.log(event.detail.value);
+    const {value} = event.detail;
+    wx.request({
+      url: app.gBaseUrl + 'search',
+      data: {
+        q: value
+      },
+      success: (res) => {
+        this.setData({
+          searchData: res.data.subjects
+        })
+        console.log('搜索结果：', res)
+      },fail: () => {
+
+      }
+    })
+  },
+  onSearchCancel() {
+    this.setData({
+      searchResult: false
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
