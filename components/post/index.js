@@ -22,12 +22,14 @@ Component({
    */
   methods: {
     onGotoPostDetailTap: function (event) {
-      // console.log('event：', event);
-      // console.log('id：', event.currentTarget.dataset.id);
+      // console.log(this);
       const pid = event.currentTarget.dataset.id;
+      // const pid = this.properties.item.postId;
       wx.navigateTo({
         url: `../post-detail/post-detail?pid=${pid}`,
       })
+      // 自定义事件
+      this.triggerEvent("posttap", { name: "4564" })
     }
   }
 })

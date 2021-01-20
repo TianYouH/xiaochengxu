@@ -22,7 +22,23 @@ Page({
     })
     // console.log('onLoad:', this.data);
   },
-
+  /**
+   * 顶部轮播点击跳转
+   */
+  onPostTap(event) {
+    console.log('自定义组件事件测试', event);
+    const pid = event.currentTarget.dataset.id;
+    // const pid = this.properties.item.postId;
+    wx.navigateTo({
+      url: `../post-detail/post-detail?pid=${pid}`,
+    })
+  },
+  /**
+   * 自定义组件事件测试
+   */
+  onPostTap1(event) {
+    console.log('自定义组件事件测试', event);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

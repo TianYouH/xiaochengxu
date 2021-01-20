@@ -18,6 +18,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onGoToDetail() {
+      console.log(this.properties.item.id);
+      const mid = this.properties.item.id;
+      wx.navigateTo({
+        url: '/pages/movie-detail/movie-detail?mid=' + mid,
+      })
+    }
   }
 })
