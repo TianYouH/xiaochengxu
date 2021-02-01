@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    movie: {}
   },
 
   /**
@@ -19,7 +19,19 @@ Page({
       url: app.gBaseUrl + 'subject/' + mid,
       success: (res) => {
         console.log(res);
+        this.setData({
+          movie: res.data
+        })
       }
+    })
+  },
+
+  /**
+   * 图片预览
+   */
+  onViewPost() {
+    wx.previewImage({
+      urls: [this.data.movie.images.large],
     })
   },
 

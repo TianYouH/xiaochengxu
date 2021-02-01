@@ -22,7 +22,7 @@ Component({
       console.log(this.properties.item.id);
       const mid = this.properties.item.id;
       wx.navigateTo({
-        url: '/pages/movie-detail/movie-detail?mid=' + mid,
+        url: '/pages/movie-detail/movie-detail?mid=' + mid
       })
     }
   }
