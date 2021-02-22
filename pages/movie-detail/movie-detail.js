@@ -1,4 +1,6 @@
 // pages/movie-detail/movie-detail.js
+import { convertToCastString } from "../../utils/util"
+
 const app = getApp();
 Page({
 
@@ -18,11 +20,16 @@ Page({
     wx.request({
       url: app.gBaseUrl + 'subject/' + mid,
       success: (res) => {
-        console.log(res);
-        this.setData({
-          movie: res.data
-        })
+        this.processMovieData(res.data);
       }
+    })
+  },
+
+  processMovieData(movie) {
+    movie.directors = convertToCastString(movie.directors);
+    movie.casts = convertToCastString(movie.casts);
+    this.setData({
+      movie
     })
   },
 

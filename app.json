@@ -13,7 +13,8 @@
   ],
   "usingComponents": {
     "l-avatar": "/miniprogram_npm/lin-ui/avatar/index",
-    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-rate": "/miniprogram_npm/lin-ui/rate/index"
   },
   "sitemapLocation": "sitemap.json",
   "window": {

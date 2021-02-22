@@ -11,6 +11,28 @@
       <text class="plain-font">条评论</text>
     </view>
     <image bindtap="onViewPost" class="movie-img" src="{{ movie.images.large }}"></image>
+    <view class="summary" >
+      <view class="original-title" >
+        <text>{{ movie.title }}</text>
+      </view>
+      <view class="flex-row" >
+        <text>评分</text>
+        <l-rate size="22" score="{{ movie.rating.stars/10 }}" disabled active-color="#FFDD55" inActive-color="#FFF5CE"></l-rate>
+        <text>{{ movie.rating.average }}</text>
+      </view>
+      <view class="flex-row" >
+        <text>导演</text>
+        <text>{{ movie.directors }}</text>
+      </view>
+      <view class="flex-row" >
+        <text>影人</text>
+        <text>{{ movie.casts }}</text>
+      </view>
+      <view class="flex-row" >
+        <text>类型</text>
+        <text>{{ movie.genres }}</text>
+      </view>
+    </view>
   </view>
 
 </view>
