@@ -16,23 +16,51 @@
         <text>{{ movie.title }}</text>
       </view>
       <view class="flex-row" >
-        <text>评分</text>
-        <l-rate size="22" score="{{ movie.rating.stars/10 }}" disabled active-color="#FFDD55" inActive-color="#FFF5CE"></l-rate>
-        <text>{{ movie.rating.average }}</text>
+        <text class="mark" >评分</text>
+        <view class="score-container" >
+          <l-rate size="22" score="{{ movie.rating.stars/10 }}" disabled active-color="#FFDD55" inActive-color="#FFF5CE"></l-rate>
+          <text class="average" >{{ movie.rating.average }}</text>
+        </view>
       </view>
       <view class="flex-row" >
-        <text>导演</text>
+        <text class="mark" >导演</text>
         <text>{{ movie.directors }}</text>
       </view>
       <view class="flex-row" >
-        <text>影人</text>
-        <text>{{ movie.casts }}</text>
+        <text class="mark" >影人</text>
+        <text>{{ movie.castsStr }}</text>
       </view>
       <view class="flex-row" >
-        <text>类型</text>
+        <text class="mark" >类型</text>
         <text>{{ movie.genres }}</text>
       </view>
     </view>
+    <view class="hr" ></view>
+    <view class="synopsis" >
+      <text class="synopsis-font" >剧情简介</text> 
+      <text class="summary-content" >{{ movie.summary }}</text>
+    </view>
+    <view class="hr" ></view>
+    <view class="casts" >
+      <text class="cast-font" >影人</text>
+      <scroll-view enable-flex="{{true}}" scroll-x="{{true}}" class="casts-container" >
+        <block wx:for="{{ movie.castsInfo }}" wx:key="index" >
+          <view class="cast-container" >
+            <image class="cast-img" src="{{ item.img }}" ></image>
+            <text>{{ item.name }}</text>
+          </view>
+          <view class="cast-container" >
+            <image class="cast-img" src="{{ item.img }}" ></image>
+            <text>{{ item.name }}</text>
+          </view>
+          <view class="cast-container" >
+            <image class="cast-img" src="{{ item.img }}" ></image>
+            <text>{{ item.name }}</text>
+          </view>
+        </block>
+      </scroll-view>
+      <!-- <scroll-view>
+      </scroll-view> -->
+    </view>
   </view>
-
 </view>

@@ -1,5 +1,5 @@
 // pages/movie-detail/movie-detail.js
-import { convertToCastString } from "../../utils/util"
+import { convertToCastString, convertToCastInfos } from "../../utils/util"
 
 const app = getApp();
 Page({
@@ -27,7 +27,9 @@ Page({
 
   processMovieData(movie) {
     movie.directors = convertToCastString(movie.directors);
-    movie.casts = convertToCastString(movie.casts);
+    movie.castsStr = convertToCastString(movie.casts);
+    movie.castsInfo = convertToCastInfos(movie.casts);
+    console.log("处理后数据：", movie.castsInfo);
     this.setData({
       movie
     })

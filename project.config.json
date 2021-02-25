@@ -21,8 +21,9 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -33,6 +34,7 @@
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
@@ -92,6 +94,12 @@
           "name": "pages/movie-detail/movie-detail",
           "pathName": "pages/movie-detail/movie-detail",
           "query": "mid=305",
+          "scene": null
+        },
+        {
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
+          "query": "",
           "scene": null
         }
       ]
