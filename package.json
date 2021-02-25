@@ -18,5 +18,6 @@
   "homepage": "https://github.com/TianYouH/xiaochengxu#readme",
   "dependencies": {
     "lin-ui": "^0.9.4"
-  }
+  },
+  "devDependencies": {}
 }

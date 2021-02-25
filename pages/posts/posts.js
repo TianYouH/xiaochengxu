@@ -1,5 +1,5 @@
 var postsData = require('../../data/posts-data.js');
-
+const API = require("../../apis/index.js");
 // pages/posts/posts.js
 Page({
 
@@ -20,7 +20,8 @@ Page({
     this.setData({
       posts_key: postsData.postList
     })
-    // console.log('onLoad:', this.data);
+    console.log('onLoad:', API);
+    API.ItHomeApi.getItHomePageData()
   },
   /**
    * 顶部轮播点击跳转
